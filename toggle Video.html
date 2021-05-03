@@ -1,0 +1,59 @@
+<html>
+<head>
+
+
+<style type="text/css">
+      .iframeframe1 { display: flex; justify-content: center; align-items: center; }
+      #toggleVideo{ background-image: url("https://winreality.com/wp-content/uploads/2020/11/WINR-Stamp-1.svg");width: 600px; height: 400px;margin: 0 auto;}
+     input[type=button] {
+    background: #77D4FF;
+    text-decoration: none;
+    color: #fff;background: #00AEFF;
+    text-decoration: none;
+    height: 55px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.5px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    margin: 5px;
+    border:none;
+}
+#toggleButton:focus{
+    padding:20px 30px !important;
+    height: 60px !important;
+    background: #77D4FF !important;
+    text-decoration: none !important;
+    color: #fff !important;
+    transition:  .20s !important;}
+
+
+
+    </style>
+
+
+</head>
+<body>
+<h2 style="text-align: center;">Pick your sport for a short tutorial</h2>
+<div style="display: flex; align-items: stretch; justify-content: center; margin-bottom:50px;">
+<input id="toggleButton" type="button" onclick="load('https://winreality.com/wp-content/uploads/2021/05/SoftballDemoVO_01.mp4')" value="BaseBall"/>
+<input id="toggleButton" type="button" onclick="load('https://winreality.com/wp-content/uploads/2021/05/Tristan-First-Grand-Slam.mp4')" value="SoftBall"/>
+</div>
+<br/>
+<div class="iframeframe1">
+<iframe allow="autoplay;" id="toggleVideo"></iframe> 
+</div>
+<script>
+function load(page) {
+  document.getElementById("toggleVideo").src = page;
+}
+</script>
+
+ 
+</body>
+</html>
