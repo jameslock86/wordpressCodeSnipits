@@ -1,119 +1,170 @@
 <html>
     <head>
         <style>
-            .cardBack{
-                background-color:#1e3261;
-                max-height: 60vw;
-                height: 600vw;
-                width: 60vw;
-                border: none;
-                border-radius: 75px;
-                z-index: 1;
-                color:#eeeeee;
-                margin-left: auto;
-                margin-right: auto;
-            }
-        
-            .cardTitle{
-                width: 100%;
-                text-align: center;
-                padding-top: 2vw;
-            }
-            .circle {
-                border-radius: 50%;
-                width: 6% im !important;
-                height: 60px;
-                padding: 10px;
-                background: #1e3261;
-                border: 1px solid #eeeeee;
-                color: #eeeeee;
-                text-align: center;
-                font: 32px Arial, sans-serif;
-                margin-left:50px;
-                margin-top: 4vw !important;
-     
+.cardBack{
+    background-color:#1e3261;
+    
+    height:fit-content;
+    width: 60vw;
+    border: none;
+    border-radius: 75px;
+    z-index: 1;
+    color:#eeeeee;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+   
+}
 
-            }
-            .cardIcon{
-                height: 6vw;
-                width: 6vw;
-                margin-left: 50px;
-            }
-            .flex-grid {
-            display: flex;
-            }
-            .col{
-                margin-top: 3vw;
-            }
-            .flex-grid .col {
-            flex: 1;
-            }
-            .flex-grid-thirds {
-            display: flex;
-            /* justify-content: space-between; */
-            }
-            
+.cardTitle{
+    width: 100%;
+    text-align: center;
+    padding-top: 1.5vw;
+    font-size: 3vw;
+    font-family:Futra, sans-serif;
 
-            @media (max-width: 400px) {
-            .flex-grid,
-            .flex-grid-thirds {
-            display: block;
-            }
-            .col {
-                width: 100%;
-                margin: 0px 0px 10px 0;
-            }
-            }
-            
-         
-            .flex-grid { 
-            margin: 0 0 20px 0;
-            }
+}
+.circle {
+    border-radius: 50%;
+    width: 12% !important;
+    height: 5vw;
+    padding: 0vw;
+    background: #1e3261;
+    border: 1px solid #eeeeee;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 3vw;
+    font-family:Roboto, sans-serif;
+    margin-left:50px;
+    margin-top: 4vw !important;
+
+
+}
+.cardIcon{
+    height: 6vw;
+    width: 6vw;
+    
+}
+.cardIcons{
+    margin-left:50px;
+}
+.cardText{
+    width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 4vw im !important;
+    font-size: 1.5vw;
+    font-family:Roboto, sans-serif;
+}
+
+.flex-grid {
+display: flex;
+}
+.col{
+    margin-top: 3vw;
+}
+.flex-grid .col {
+flex: 1;
+}
+.flex-grid-thirds {
+ display: flex; 
+
+}
+
+
+.flex-grid { 
+margin: 0 0 20px 0;
+}
+
+@media only screen and (max-width: 600px){
+.flex-grid-thirds{
+    flex-wrap:wrap !important;
+    align-items: center !important;
+  justify-content: center !important;
+  
+}
+.cardTitle{
+    padding-top:3.5vw;
+}
+.circle{
+    
+    order:2;
+    font-size: 5vw !important;
+    height: 7vw !important;
+    margin-left: 6vw !important;
+    
+}
+.cardIcon{
+    height: 10vw !important;
+    width: 10vw !important;
+   
+}
+.cardIcons{
+    width: 100%;
+    align-items: center;
+    order: 1;
+    margin-left:25vw !important;
+}
+.cardText{
+    width: 50% !important;
+    order:3;
+    margin-left: 6vw !important;
+    margin-right: 1.5vw !important;
+    margin-top: 7vw !important;
+    font-size: 3vw !important;
+}
+.cardBack{
+    border-radius: 35px !important;
+}
+}
+
+@media only screen and (max-width: 400px){
+    .cardTitle{
+    padding-top:4.5vw;
+}
+.circle{
+    margin-top: 5vw !important; 
+}
+.cardText{
+    font-size: 2.5vw;
+}
+}
+
+
            
-           .cardText{
-               width: 100%;
-               margin-left: 50px;
-               margin-right: 50px;
-               margin-top: 5vw;
-           }
           
 
         </style>
     </head>
     <body>
         <div class="cardBack">
-            <h2 class="cardTitle">The how-too's of WIN Reality</h2>
-        <div class="flex-grid-thirds">
+            <p id="cardTitle">The how-too's of WIN Reality</p>
+            <div class="flex-grid-thirds">
             <div class="col circle">1</div>
-         
-            <div class="col"><img class="cardIcon" src="https://testprod.winreality.com/wp-content/uploads/2021/05/Asset-1-2.png" alt="line drawn WIN Reality Icon"></div>
+            <div class="col cardIcons"><img class="cardIcon" src="https://testprod.winreality.com/wp-content/uploads/2021/05/Asset-1-2.png" alt="line drawn WIN Reality Icon" /></div>
             <div class="col cardText">You'll need an Oculus Quest 2</div>
-          
-          </div>
-          
-          
-          <div class="flex-grid-thirds">
+            </div>
+            <div class="flex-grid-thirds">
             <div class="col circle">2</div>
-            <div class="col"><img class="cardIcon" src="https://testprod.winreality.com/wp-content/uploads/2021/05/Asset-1-1.png" alt="line drawn WIN Reality Icon"></div>
+            <div class="col cardIcons"><img class="cardIcon" src="https://testprod.winreality.com/wp-content/uploads/2021/05/Asset-1-1.png" alt="line drawn WIN Reality Icon" /></div>
             <div class="col cardText">Create a WIN Reality membership by joining today!</div>
-          </div>
-          
-          <div class="flex-grid-thirds">
-            <div class="col  circle">3</div>
-            <div class="col"><img class="cardIcon" src="https://testprod.winreality.com/wp-content/uploads/2021/05/Asset-1.png" alt="line drawn WIN Reality Icon"></div>
+            </div>
+            <div class="flex-grid-thirds">
+            <div class="col circle">3</div>
+            <div class="col cardIcons"><img class="cardIcon" src="https://testprod.winreality.com/wp-content/uploads/2021/05/Asset-1.png" alt="line drawn WIN Reality Icon" /></div>
             <div class="col cardText">For our full functionality, purchase our WIN Bat Attachment and a Diamond Kinetics sensor from our cart</div>
-          </div>
-          <div class="flex-grid-thirds">
-            <div class="col  circle">4</div>
-            <div class="col"><img class="cardIcon" src="https://testprod.winreality.com/wp-content/uploads/2021/05/Asset-2.png" alt="line drawn WIN Reality Icon"></div>
+            </div>
+            <div class="flex-grid-thirds">
+            <div class="col circle">4</div>
+            <div class="col cardIcons"><img class="cardIcon" src="https://testprod.winreality.com/wp-content/uploads/2021/05/Asset-2.png" alt="line drawn WIN Reality Icon" /></div>
             <div class="col cardText">download WIN Reality app in the oculus store (app lab)</div>
-          </div>
-          <div class="flex-grid-thirds">
-            <div class="col  circle">5</div>
-            <div class="col"><img class="cardIcon" src="https://testprod.winreality.com/wp-content/uploads/2021/05/Asset-1-2.png" alt="line drawn WIN Reality Icon"></div>
+            </div>
+            <div class="flex-grid-thirds">
+            <div class="col circle">5</div>
+            <div class="col cardIcons"><img class="cardIcon" src="https://testprod.winreality.com/wp-content/uploads/2021/05/Asset-1-2.png" alt="line drawn WIN Reality Icon" /></div>
             <div class="col cardText">start seeing pitches, and when your equipment arrives hitting in VR</div>
-          </div>
-        </div>
+            </div>
+            </div>
         
     </body>
 </html>
