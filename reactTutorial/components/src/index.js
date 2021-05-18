@@ -13,10 +13,17 @@ const App = () => {
              <ApprovalCard>
                 <CommentDetail author="james" timeAgo="Time at 3" comment="this is text" image={faker.image.avatar()}/>
             </ApprovalCard>
-
+            <ApprovalCard>
                 <CommentDetail author="bob" timeAgo="Time at 1" comment="this is textss" image={faker.image.avatar()}/>
+            </ApprovalCard>
+            <ApprovalCard>
                 <CommentDetail author="jae" timeAgo="Time at 2" comment="this is texts" image={faker.image.avatar()}/>
-          
+            </ApprovalCard>
+            <ApprovalCard>
+                <div>
+                    words here !
+                </div>
+            </ApprovalCard>
         </div>
     )
 
