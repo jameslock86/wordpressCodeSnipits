@@ -38,18 +38,20 @@ class App extends React.Component{
     }
     
     render(){
-
-        
-        return(
-            <div>
-                Latitude:{this.state.latitude}
-                <br/>
-                longitude:{this.state.longitude}
-                <br/>
-                Error: {this.state.errorMessage}
-                <SeasonDisplay/>
-            </div>
-        )
+        if(this.state.error && !this.state.latitude){
+            return<div>Error: {this.state.errorMessage}</div>
+        }
+        if (!this.state.errorMessage && this.state.latitude){
+            return (
+                <div>
+                    Latitude:{this.state.latitude}
+                    <br/>
+                    longitude:{this.state.longitude}
+                    <br/>
+                </div>
+            )
+        }
+    return <div>Loading!</div>;
     }
 }
 
