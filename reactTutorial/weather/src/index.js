@@ -13,6 +13,11 @@ class App extends React.Component{
             longitude:null,
             errorMessage:''
         }
+       
+    
+    }
+
+    componentDidMount(){
         window.navigator.geolocation.getCurrentPosition(
             
             (position) => {
@@ -30,11 +35,6 @@ class App extends React.Component{
             
 
         );
-    
-    }
-
-    componentDidMount(){
-
     }
     
     render(){
